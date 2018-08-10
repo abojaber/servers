@@ -23,5 +23,4 @@ generateList = function (data) {
     console.log(table.toString());
 };
 
-
 module.exports.generateList = generateList;
