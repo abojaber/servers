@@ -12,18 +12,18 @@ prog
     .command('server', 'Manage Your Servers')
     .argument('server_action', 'list,add or edit', /^add|list$/)
     .option('--env <env>', 'which <env> you like to list', prog.STRING)
-    .action(function(args, options, logger){
-        if(args.serverAction ==='add'){
+    .action(function (args, options, logger) {
+        if (args.serverAction === 'add') {
             server.add();
         }
-        if(args.serverAction ==='list'){
+        if (args.serverAction === 'list') {
             server.list(options);
         }
     })
 
     .command('user', 'Manage Server Users')
     .argument('user_action', 'list, add,delete or edit', /^add|list$/)
-    .action(function(args, options, logger){
+    .action(function (args, options, logger) {
         user.add(args);
     });
 

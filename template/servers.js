@@ -4,14 +4,16 @@ var Table = require('cli-table');
 
 generateList = function (data) {
     var table = new Table({
-        chars: { 'top': '═' , 'top-mid': '╤' , 'top-left': '/' , 'top-right': '\\'
-            , 'bottom': '═' , 'bottom-mid': '╧' , 'bottom-left': '╚' , 'bottom-right': '╝'
-            , 'left': '║' , 'left-mid': '╟' , 'mid': '─' , 'mid-mid': '┼'
-            , 'right': '║' , 'right-mid': '╢' , 'middle': '│' },
+        chars: {
+            'top': '═', 'top-mid': '╤', 'top-left': '/', 'top-right': '\\'
+            , 'bottom': '═', 'bottom-mid': '╧', 'bottom-left': '╚', 'bottom-right': '╝'
+            , 'left': '║', 'left-mid': '╟', 'mid': '─', 'mid-mid': '┼'
+            , 'right': '║', 'right-mid': '╢', 'middle': '│'
+        },
 
 
         head: ['id', 'hostname', 'ip', 'env', 'created', 'updated'],
-        colWidths: [4, 15,10,15,20,20]
+        colWidths: [4, 15, 10, 15, 20, 20]
 
     });
 
