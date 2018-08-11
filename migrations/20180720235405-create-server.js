@@ -17,6 +17,12 @@ module.exports = {
             env: {
                 type: Sequelize.STRING
             },
+            user: {
+                type: Sequelize.STRING
+            },
+            password: {
+                type: Sequelize.STRING
+            },
             createdAt: {
                 allowNull: false,
                 type: Sequelize.DATE

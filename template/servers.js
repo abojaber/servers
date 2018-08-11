@@ -12,8 +12,8 @@ generateList = function (data) {
         },
 
 
-        head: ['id', 'hostname', 'ip', 'env', 'created', 'updated'],
-        colWidths: [4, 15, 10, 15, 20, 20]
+        head: ['id', 'hostname', 'ip', 'user', 'pass', 'env', 'created', 'updated'],
+        colWidths: [4, 15, 10, 15, 15, 15, 20, 20]
 
     });
 

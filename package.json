@@ -15,8 +15,10 @@
   "dependencies": {
     "caporal": "^0.10.0",
     "cli-table": "^0.3.1",
+    "clipboardy": "^1.2.3",
     "dotenv": "^6.0.0",
-    "inquirer": "^6.0.0",
+    "inquirer": "^6.1.0",
+    "loadash": "^1.0.0",
     "sequelize": "^4.38.0",
     "sequelize-cli": "^4.0.0",
     "sqlite3": "^4.0.2"
