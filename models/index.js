@@ -31,6 +31,8 @@ Object.keys(db).forEach(modelName => {
 });
 
 db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+
+//relationship
+db.Server.belongsTo(db.Project,{foreignKey: 'project'});
 
 module.exports = db;

@@ -18,6 +18,7 @@ generateList = function (data) {
     });
 
     data.forEach(function (server) {
+        console.log(server.project);
         table.push(Object.values(server.dataValues));
     });
 

@@ -9,6 +9,9 @@ nodejs > 10.8
 generate DB
 `node_modules/.bin/sequelize db:migrate`
 
+`node_modules/.bin/sequelize db:migrate:reset`
+
+`node_modules/.bin/sequelize db:migrate:undo:all`
 
 #commands
 

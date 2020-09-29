@@ -1,0 +1,42 @@
+const inquirer = require('inquirer');
+const clipboardy = require('clipboardy');
+
+var _ = require('lodash');
+
+var db = require('../models/index');
+var template = require('../template/projects');
+var questions = [
+    {
+        type: 'input',
+        name: 'name',
+        message: 'Enter project name:'
+    }
+];
+
+var add = function () {
+
+    inquirer
+        .prompt(
+            questions
+        )
+        .then(answers => {
+            db.Server.create(answers).then(function () {
+                console.log("adding new project success: %d", answers.hostname);
+            });
+        });
+};
+
+
+var list = function (option = {}) {
+
+    where = {
+        where: _.pick(option, _.identity)
+    };
+
+    db.Project.findAll(where).then(projects => {
+        template.generateList(projects);
+    });
+
+};
+module.exports.add = add;
+module.exports.list = list;

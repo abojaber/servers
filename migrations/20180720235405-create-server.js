@@ -11,6 +11,9 @@ module.exports = {
             hostname: {
                 type: Sequelize.STRING
             },
+            project: {
+                type: Sequelize.INTEGER
+            },
             ip: {
                 type: Sequelize.STRING
             },
